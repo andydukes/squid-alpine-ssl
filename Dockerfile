@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-LABEL maintainer="alatas@gmail.com"
+LABEL maintainer="andymdukes@icloud.com"
 
 #set enviromental values for certificate CA generation
 ENV CN=squid.local \
@@ -9,7 +9,7 @@ ENV CN=squid.local \
     C=US
 
 #set proxies for alpine apk package manager
-ARG all_proxy 
+ARG all_proxy
 
 ENV http_proxy=$all_proxy \
     https_proxy=$all_proxy
