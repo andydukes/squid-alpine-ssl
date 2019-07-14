@@ -3,10 +3,10 @@ services:
   squid-alpine-ssl:
     image: alatas/squid-alpine-ssl:latest
     environment:
-      - CN=squid.local
+      - CN=squid.local.lan
       - O=squid
       - OU=squid
-      - C=US
+      - C=UK
     ports:
       - "3128:3128"
       - "4128:4128"
